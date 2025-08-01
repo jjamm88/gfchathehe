@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy GF Day!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg-hearts"></canvas>
+  <div id="start-screen" class="centered">
+    <h1>Happy GF Day!</h1>
+    <button id="start-btn" class="pixel-btn">Start Game</button>
+  </div>
+  <div id="game-container" style="display:none;">
+    <canvas id="maze-canvas" width="512" height="512"></canvas>
+    <audio id="bg-music" src="bg.mp3" loop></audio>
+  </div>
+  <div id="win-modal" class="modal">
+    <div class="modal-content">
+      <h2>You Found My Heart! ❤️</h2>
+      <p>
+        Through every twist and turn, you always find your way to me.<br><br>
+        Thank you for being my chat, my best friend, and the love of my life.<br><br>
+        I'm so lucky to have you in my life. ❤️
+      </p>
+      <button id="memories-btn" class="pixel-btn">View Our Memories</button>
+    </div>
+  </div>
+  <div id="gallery-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Our Memories</h2>
+      <div class="gallery-grid">
+        <img src="Images/Messenger_creation_5ED705D8-753F-4BF8-9239-55B47B2340A0.jpg" class="gallery-img" alt="Memory 1" loading="lazy">
+        <img src="Images/20250707_211726.jpg" class="gallery-img" alt="Memory 2" loading="lazy">
+        <img src="Images/20250629_165717.jpg" class="gallery-img" alt="Memory 3" loading="lazy">
+        <img src="Images/20250607_160855.jpg" class="gallery-img" alt="Memory 4" loading="lazy">
+        <img src="Images/20250601_125614.jpg" class="gallery-img" alt="Memory 5" loading="lazy">
+        <img src="Images/20250524_172328.jpg" class="gallery-img" alt="Memory 6" loading="lazy">
+        <img src="Images/20250510_195535.jpg" class="gallery-img" alt="Memory 7" loading="lazy">
+        <img src="Images/20250510_190723.jpg" class="gallery-img" alt="Memory 8" loading="lazy">
+      </div>
+      <button id="close-gallery" class="pixel-btn">Close</button>
+    </div>
+  </div>
+  <script src="maze.js"></script>
+</body>
+</html>
+</html>
